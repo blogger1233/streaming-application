@@ -72,6 +72,18 @@
 .show-password{
   font-family: space-mono;
 }
+.extra-para{
+  font-family: space-mono;
+}
+.ver{
+  padding: 10px;
+  font-family: space-mono;
+}
+.ver input{
+  border: 1px solid gray;
+  font-family: space-mono;
+  padding: 5px;
+}
 @media only screen and (max-width: 767px) {
   .form{
     width: 70vw;
@@ -83,8 +95,13 @@
   }
 
 }
-
-
+.ver{
+  background-color: #f8f9fd;
+  border: 1px solid black;
+}
+.ver button{
+  font-family: space-mono;
+}
 /* Styles for tablets (768px to 1023px width) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .form{

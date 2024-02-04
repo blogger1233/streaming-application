@@ -1,0 +1,19 @@
+.resource{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ECEFF0;
+    height: 100vh;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+.link{
+    font-family: space-mono-bold;
+    color: black;
+    text-decoration: none;
+}
