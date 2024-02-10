@@ -6,6 +6,8 @@ import Login from './auth/Login.jsx'
 
 import Signup from './auth/Signup.jsx'
 import Verify from './auth/Verify.jsx'
+import Resource from './resource/Resource.jsx'
+import Home from './resource/Home.jsx'
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -18,6 +20,17 @@ const router = createBrowserRouter([
   {
     path: "/verify/:email",
     element: <Verify />
+  },
+  {
+    path: "/resource",
+    element: <Resource />,
+    children: [
+      {
+
+        path: "/resource/home",
+        element: <Home />
+      }
+    ]
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(

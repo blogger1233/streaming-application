@@ -1,0 +1,82 @@
+.navbar {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-bar{
+    background: none;
+    border: none;
+}
+.text-input{
+    padding: 5px;
+    font-family: space-mono;
+}
+.search-button{
+    display: none;
+    background:none;
+    border: none;
+}
+.search-button img{
+    height: 20px;
+}
+.pfp img{
+    height: 20px;
+}
+.text-input{
+    background-image: url('/public/icons8-search-100.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+@media only screen and (max-width: 767px) {
+    .menu-bar img{
+        height: 20px;
+    }
+    .logo{
+        font-size: large;
+        color: black;
+        font-family: space-mono-bold;
+        text-decoration: none;
+        vertical-align: center;
+    }
+    .text-input{
+        display: none;
+    }
+    .search-button{
+        display: unset;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    button:first-child img{
+        height: 20px;
+    }
+    .logo{
+        font-size: large;
+        color: black;
+        font-family: space-mono-bold;
+        text-decoration: none;
+    }
+    .text-input{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .logo{
+        font-size: larger;
+        color: black;
+        font-family: space-mono-bold;
+        text-decoration: none;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .text-input{
+        width: 50%;
+    }
+}

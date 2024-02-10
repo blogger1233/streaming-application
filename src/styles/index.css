@@ -84,6 +84,7 @@
   font-family: space-mono;
   padding: 5px;
 }
+
 @media only screen and (max-width: 767px) {
   .form{
     width: 70vw;
@@ -92,6 +93,9 @@
 
     width: 20vw;
 
+  }
+  #pfp img{
+    height: 25px;
   }
 
 }
@@ -107,7 +111,9 @@
   .form{
     width: 70vw;
   }
-
+  #pfp img{
+    height: 30px;
+  }
 }
 
 /* Styles for desktops (1024px and above) */
@@ -115,5 +121,7 @@
   .form{
     width: 30vw;
   }
-
+  #pfp img{
+    height: 40px;
+  }
 }

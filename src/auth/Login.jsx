@@ -6,6 +6,7 @@ export default function Login() {
     const [loading, setLoading] = useState(false)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [token, setToken] = useState();
     const [message, setMessage] = useState("")
     const [checked, setCheck] = useState(false)
     const element = useRef();
@@ -48,6 +49,7 @@ export default function Login() {
                 element.current.style.opacity = 1;
                 localStorage.setItem("token", JSON.stringify(data))
                 element.current.innerHTML = "user Logged in successfully"
+                setToken(data)
                 setLoading(false)
                 setTimeout(() => {
                     element.current.style.opacity = 0;
@@ -73,9 +75,9 @@ export default function Login() {
     }
     useEffect(() => {
         if (localStorage.getItem("token")) {
-            navigate("/signup")
+            navigate("/resource")
         }
-    }, [])
+    }, [token])
     return (<div className="login-page">
 
 
