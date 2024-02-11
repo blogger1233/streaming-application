@@ -8,6 +8,7 @@ import Signup from './auth/Signup.jsx'
 import Verify from './auth/Verify.jsx'
 import Resource from './resource/Resource.jsx'
 import Home from './resource/Home.jsx'
+import Upload from './resource/Upload.jsx'
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
 
         path: "/resource/home",
         element: <Home />
+      },
+      {
+        path: "/resource/upload",
+        element: <Upload />
       }
     ]
   }

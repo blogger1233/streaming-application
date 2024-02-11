@@ -44,7 +44,7 @@ export default function Signup() {
                 }, 3000)
                 return;
             }
-            const response = await fetch("http://192.168.1.8:8000/user/registration", {
+            const response = await fetch("http://localhost:8000/user/registration", {
                 method: "post",
                 headers: {
                     "Content-type": "application/json"

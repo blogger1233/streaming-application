@@ -68,7 +68,7 @@ export default function Verify() {
         console.log(code.length)
         if (code.length > 3) {
             try {
-                const response = await fetch(`http://192.168.1.8:8000/user/ver/${state.email}/${code}`);
+                const response = await fetch(`http://localhost:8000/user/ver/${state.email}/${code}`);
                 const data = await response.json();
 
                 element.current.style.opacity = 1;

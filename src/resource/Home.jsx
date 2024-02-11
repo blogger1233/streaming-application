@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
+import Images from "./Images";
 export default function Home() {
     const navigate = useNavigate();
     const [page, setPage] = useState(0)
@@ -51,5 +52,10 @@ export default function Home() {
     }, [])
     return (<div className="home">
         {loading ? <p>loading...</p> : ""}
+        {data.length > 0 ?
+            data.map((value, index) => {
+                return <Images props={value} key={index} />
+            })
+            : <span></span>}
     </div>)
 }

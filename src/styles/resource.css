@@ -9,6 +9,7 @@
     display: grid;
     height: 90vh;
     grid-template-columns: 20% 80%;
+
 }
 .sidebar{
     background-color: rgb(255, 255, 255);
@@ -17,6 +18,7 @@
     box-sizing: border-box;
     padding: 10px;
     flex-direction: column;
+
 }
 .sidebar a{
     font-family: space-mono-bold;
@@ -25,5 +27,38 @@
 }
 .home{
     background-color: greenyellow;
-}
 
+}
+.upload{
+    background-color: #6368ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drop-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 4px dashed rgb(255, 255, 255);
+    height: 90%;
+    width: 90%;
+}
+.drop-box img{
+    height: 100px;
+    width:100px;
+}
+.drop-box h1{
+    text-align: center;
+    font-family: space-mono;
+    color: white;
+}
+.drop-box button{
+    background:none;
+    border: none;
+    background-color: #111ce3;
+    font-family: space-mono-bold;
+    color: white;
+    font-size: large;
+    padding: 5px 10px;
+}
